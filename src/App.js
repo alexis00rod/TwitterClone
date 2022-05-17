@@ -1,8 +1,13 @@
+import SidebarContainer from "./Components/Sidebar/SidebarContainer";
+import HomeContainer from "./Components/Home/HomeContainer";
+import "./App.scss"
+
 function App() {
     return (
-        <div className="App">
-
-        </div>
+        <>
+            <SidebarContainer />
+            <HomeContainer />
+        </>
     );
 }
 

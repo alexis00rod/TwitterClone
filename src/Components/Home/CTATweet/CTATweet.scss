@@ -1,0 +1,68 @@
+@import '../../../App.scss';
+
+.tweet-container {
+    width: 100%;
+    max-width: 37.5rem;
+    margin: auto;
+    border-radius: .3rem;
+    background-color: $color-white;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    img {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+    }
+    .tweet-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        input {
+            padding-top: 1rem;
+            width: 100%;
+            border: none;
+            font-size: 1.4rem;
+            color: $color-secondary;
+            outline: none;
+
+            &::placeholder {
+                color: $color-darkgray;
+
+            }
+        }
+
+        &-cta {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul {
+                display: flex;
+                gap: .5rem;
+
+                li {
+                    i {
+                        color: $color-primary;
+                        font-size: 1.2rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+            button {
+                width: max-content;
+                height: 2.5rem;
+                padding: 0 1.5rem;
+                background-color: $color-primary;
+                border: none;
+                color: $color-white;
+                font-weight: bolder;
+                border-radius: 1.5rem;
+            }
+        }
+    }
+}
