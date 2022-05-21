@@ -1,0 +1,18 @@
+@import "../../App.scss";
+
+footer {
+    padding: 1rem;
+    p {
+        display: flex;
+        align-items: center;
+        gap: .2rem;
+        font-size: .8rem;
+        color: $color-darkgray;
+        a {
+            color: $color-darkgray;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

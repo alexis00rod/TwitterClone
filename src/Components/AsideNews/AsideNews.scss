@@ -1,0 +1,108 @@
+@import "../../App.scss";
+
+.asidenews-container {
+    background-color: $color-white;
+    padding: 1rem .7rem;
+    border-radius: .3rem;
+    h2 {
+        font-size: 1.2rem;
+    }
+    &-list {
+        display: flex;
+        flex-direction: column;
+        &-item {
+            display: flex;
+            align-items: center;
+            padding: .8rem;
+            border-bottom: .1rem solid $color-extralightgray;
+            &-body {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                gap: .3rem;
+                &-header {
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    h4 {
+                        display: flex;
+                        gap: .5rem;
+                        align-items: center;
+                        font-size: .9rem;
+                        color: $color-darkgray;
+                        i {
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            font-size: 1.1rem;
+                        }
+                    }
+                    span {
+                        display: flex;
+                        align-items: center;
+                        background-color: #f81778;
+                        color: $color-white;
+                        gap: .3rem;
+                        text-transform: uppercase;
+                        padding: .3rem .5rem;
+                        font-size: .8rem;
+                        border-radius: .2rem;
+                        i {
+                            font-size: .4rem;
+                        }
+                    }
+                }
+                p {
+                    font-size: .9rem;
+                    width: 100%;
+                    max-width: 18rem;
+                }
+            }
+            img {
+                width: 5rem;
+                height: 5rem;
+                border-radius: .5rem;
+                object-fit: cover;
+            }
+
+        }
+        &-item:nth-child(1) {
+            h4 {
+                i {
+                    background-color: #c2f7ff;
+                    color: #57aab5;
+                }
+            }
+        }
+        &-item:nth-child(2) {
+            h4 {
+                i {
+                    background-color: #ffe8c5;
+                    color: #cb9d5c;
+                }
+            }
+            span {
+                background-color: #ff6e5b;
+            }
+        }
+        &-item:nth-child(3) {
+            h4 {
+                i {
+                    background-color: #e3ffe9;
+                    color:#549661;
+                }
+            }
+        }
+        &-item:nth-child(4) {
+            h4 {
+                i {
+                    background-color: #d3f4ff;
+                    color: #548494;
+                }
+            }
+        }
+    }
+}
